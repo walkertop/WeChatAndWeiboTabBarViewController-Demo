@@ -1,7 +1,6 @@
 # WeChatAndWeiboTabBarViewController-Demo
 #精讲系列之—— 十分钟学会搭建微信和微博两种主流框架（纯代码）
 
-[TOC]
 
 目录：
 > - 1、两种框架的介绍
@@ -44,7 +43,7 @@ UITabBarController的代理协议`UITabBarControllerDelegate`中有`- (void)tabB
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  //类似微信的UITabBarController
 	GBWeChatTabBarController *weChatVc = [[GBWeChatTabBarController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:weiboVc];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:weChatVc];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
@@ -119,14 +118,27 @@ UITabBarController的代理协议`UITabBarControllerDelegate`中有`- (void)tabB
 
 > - 1. 在appDelegate中，将window的rootViewController设置为带有UITabBarController的导航控制器;
 > - 2. 创建子控制器，设置子控制器的title,image,selectedImage等属性
-> - 3. 设置子控制器的导航控制器，并添加到childViewController中，
+> - 3. 设置子控制器的导航控制器，并添加到childViewController中
 > - 4. 自定义新的UITabBar，然后在UITabBar上添加中间的加号按钮
 > - 5. 重写layoutSubviews，完成布局。
 > - 6. 实现点击事件，并定义代理方法，将代理方法传至UITabBarController中
 
 ### 2、微博主流框架的代码实现
 
-#### 1.
+#### 1. 在appDelegate中，将window的rootViewController设置为带有UITabBarController的导航控制器;
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+ //类似微信的UITabBarController
+	GBWeiboTabBarViewController *weiboVc = [[GBWeiboTabBarViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:weiboVc];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+```
+
+#### 2. 创建子控制器，设置子控制器的title,image,selectedImage等属性
 ```
 /**
  *  初始化一个子控制器
@@ -152,7 +164,7 @@ UITabBarController的代理协议`UITabBarControllerDelegate`中有`- (void)tabB
 
 
 
-#### 2.
+#### 3. 设置子控制器的导航控制器，并添加到childViewController中
 
 ```
 // 初始化所有的子控制器
@@ -176,7 +188,7 @@ UITabBarController的代理协议`UITabBarControllerDelegate`中有`- (void)tabB
 
 ```
 
-#### 3.
+#### 4. 自定义新的UITabBar，然后在UITabBar上添加中间的加号按钮，并重写layoutSubviews，完成布局
 
 ```
 #import "GBTabBar.h"
@@ -231,7 +243,7 @@ UITabBarController的代理协议`UITabBarControllerDelegate`中有`- (void)tabB
     }
 }
 ```
-#### 4.
+#### 5. 实现点击事件，并定义代理方法，将代理方法传至UITabBarController中
 
 ```
 //  GBTabBar.h文件中
@@ -279,6 +291,9 @@ UITabBarController的代理协议`UITabBarControllerDelegate`中有`- (void)tabB
 我不做无根的作者，你也不要做浅层的读者。
 
 如有错误欢迎指出，文毕，程序员注定不能做一个孤独的勇士，也欢迎大家加微信号` bin5211bin`学习交流。
+
+点击下载Demo:
 [Demo下载](https://github.com/walkertop/WeChatAndWeiboTabBarViewController-Demo)
+> - 代码说明，默认是微博类型框架，切换微信控制器只需要在appDelegate中将navagationController的rootViewController改为weChatVc即可。
 
 
