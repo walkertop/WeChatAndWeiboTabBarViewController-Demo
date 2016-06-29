@@ -10,7 +10,7 @@
 > - 4、微博主流框架的实现思路
 > - 5、微博主流框架的代码实现
 > - 6、总结
-> - 7、Demo下载
+> - 7、[Demo下载](https://github.com/walkertop/WeChatAndWeiboTabBarViewController-Demo)
 
 ## 介绍
 实际开发中，我们常会见到两种主流框架，一种类似于微信，UIWindow的根`rootViewController`为`UITabBarController`，然后调用`addChildViewController`（继承自UIViewController）添加子控制器。然后实现控制器的跳转。
@@ -279,6 +279,6 @@ UITabBarController的代理协议`UITabBarControllerDelegate`中有`- (void)tabB
 我不做无根的作者，你也不要做浅层的读者。
 
 如有错误欢迎指出，文毕，程序员注定不能做一个孤独的勇士，也欢迎大家加微信号` bin5211bin`学习交流。
-下面粘贴Demo
+[Demo下载](https://github.com/walkertop/WeChatAndWeiboTabBarViewController-Demo)
 
 
