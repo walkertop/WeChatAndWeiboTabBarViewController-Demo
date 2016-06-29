@@ -12,7 +12,6 @@
 > - 6、总结
 > - 7、Demo下载
 
-首先说明，根本没有十分钟学会，但
 ## 介绍
 实际开发中，我们常会见到两种主流框架，一种类似于微信，UIWindow的根`rootViewController`为`UITabBarController`，然后调用`addChildViewController`（继承自UIViewController）添加子控制器。然后实现控制器的跳转。
 
