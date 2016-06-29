@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60646531D2262BF00EFA8E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A60646521D2262BF00EFA8E6 /* main.m */; };
+		A60646561D2262BF00EFA8E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A60646551D2262BF00EFA8E6 /* AppDelegate.m */; };
+		A606465E1D2262BF00EFA8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A606465D1D2262BF00EFA8E6 /* Assets.xcassets */; };
+		A60646611D2262BF00EFA8E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A606465F1D2262BF00EFA8E6 /* LaunchScreen.storyboard */; };
+		A606466A1D22634400EFA8E6 /* GBWeChatTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60646691D22634400EFA8E6 /* GBWeChatTabBarController.m */; };
+		A606466D1D226C9300EFA8E6 /* GBOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A606466C1D226C9300EFA8E6 /* GBOneTableViewController.m */; };
+		A60646701D226CA600EFA8E6 /* GBTwoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A606466F1D226CA600EFA8E6 /* GBTwoTableViewController.m */; };
+		A60646731D226CB500EFA8E6 /* GBThreeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60646721D226CB500EFA8E6 /* GBThreeTableViewController.m */; };
+		A60646761D226CC700EFA8E6 /* GBFourTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60646751D226CC700EFA8E6 /* GBFourTableViewController.m */; };
+		A667AB851D2276B300B54786 /* GBWeiboTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A667AB841D2276B300B54786 /* GBWeiboTabBarViewController.m */; };
+		A667AB971D22B68700B54786 /* GBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A667AB961D22B68700B54786 /* GBTabBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A606464E1D2262BF00EFA8E6 /* GBTabbarFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBTabbarFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60646521D2262BF00EFA8E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A60646541D2262BF00EFA8E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A60646551D2262BF00EFA8E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A606465D1D2262BF00EFA8E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A60646601D2262BF00EFA8E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A60646621D2262BF00EFA8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60646681D22634400EFA8E6 /* GBWeChatTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBWeChatTabBarController.h; sourceTree = "<group>"; };
+		A60646691D22634400EFA8E6 /* GBWeChatTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBWeChatTabBarController.m; sourceTree = "<group>"; };
+		A606466B1D226C9300EFA8E6 /* GBOneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBOneTableViewController.h; sourceTree = "<group>"; };
+		A606466C1D226C9300EFA8E6 /* GBOneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBOneTableViewController.m; sourceTree = "<group>"; };
+		A606466E1D226CA600EFA8E6 /* GBTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTwoTableViewController.h; sourceTree = "<group>"; };
+		A606466F1D226CA600EFA8E6 /* GBTwoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTwoTableViewController.m; sourceTree = "<group>"; };
+		A60646711D226CB400EFA8E6 /* GBThreeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBThreeTableViewController.h; sourceTree = "<group>"; };
+		A60646721D226CB500EFA8E6 /* GBThreeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBThreeTableViewController.m; sourceTree = "<group>"; };
+		A60646741D226CC700EFA8E6 /* GBFourTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBFourTableViewController.h; sourceTree = "<group>"; };
+		A60646751D226CC700EFA8E6 /* GBFourTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBFourTableViewController.m; sourceTree = "<group>"; };
+		A667AB831D2276B300B54786 /* GBWeiboTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBWeiboTabBarViewController.h; sourceTree = "<group>"; };
+		A667AB841D2276B300B54786 /* GBWeiboTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBWeiboTabBarViewController.m; sourceTree = "<group>"; };
+		A667AB951D22B68700B54786 /* GBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBTabBar.h; sourceTree = "<group>"; };
+		A667AB961D22B68700B54786 /* GBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBTabBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A606464B1D2262BF00EFA8E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60646451D2262BF00EFA8E6 = {
+			isa = PBXGroup;
+			children = (
+				A60646501D2262BF00EFA8E6 /* GBTabbarFramework */,
+				A606464F1D2262BF00EFA8E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A606464F1D2262BF00EFA8E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A606464E1D2262BF00EFA8E6 /* GBTabbarFramework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60646501D2262BF00EFA8E6 /* GBTabbarFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A60646541D2262BF00EFA8E6 /* AppDelegate.h */,
+				A60646551D2262BF00EFA8E6 /* AppDelegate.m */,
+				A667AB861D2276B700B54786 /* Weibo */,
+				A667AB871D2276C800B54786 /* Wechat */,
+				A667AB881D2276E600B54786 /* ChildViewController */,
+				A606465D1D2262BF00EFA8E6 /* Assets.xcassets */,
+				A606465F1D2262BF00EFA8E6 /* LaunchScreen.storyboard */,
+				A60646621D2262BF00EFA8E6 /* Info.plist */,
+				A60646511D2262BF00EFA8E6 /* Supporting Files */,
+			);
+			path = GBTabbarFramework;
+			sourceTree = "<group>";
+		};
+		A60646511D2262BF00EFA8E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A60646521D2262BF00EFA8E6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A667AB861D2276B700B54786 /* Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				A667AB831D2276B300B54786 /* GBWeiboTabBarViewController.h */,
+				A667AB841D2276B300B54786 /* GBWeiboTabBarViewController.m */,
+				A667AB941D22B64500B54786 /* GBTabBar */,
+			);
+			name = Weibo;
+			sourceTree = "<group>";
+		};
+		A667AB871D2276C800B54786 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				A60646681D22634400EFA8E6 /* GBWeChatTabBarController.h */,
+				A60646691D22634400EFA8E6 /* GBWeChatTabBarController.m */,
+			);
+			name = Wechat;
+			sourceTree = "<group>";
+		};
+		A667AB881D2276E600B54786 /* ChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A606466B1D226C9300EFA8E6 /* GBOneTableViewController.h */,
+				A606466C1D226C9300EFA8E6 /* GBOneTableViewController.m */,
+				A606466E1D226CA600EFA8E6 /* GBTwoTableViewController.h */,
+				A606466F1D226CA600EFA8E6 /* GBTwoTableViewController.m */,
+				A60646711D226CB400EFA8E6 /* GBThreeTableViewController.h */,
+				A60646721D226CB500EFA8E6 /* GBThreeTableViewController.m */,
+				A60646741D226CC700EFA8E6 /* GBFourTableViewController.h */,
+				A60646751D226CC700EFA8E6 /* GBFourTableViewController.m */,
+			);
+			name = ChildViewController;
+			sourceTree = "<group>";
+		};
+		A667AB941D22B64500B54786 /* GBTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A667AB951D22B68700B54786 /* GBTabBar.h */,
+				A667AB961D22B68700B54786 /* GBTabBar.m */,
+			);
+			name = GBTabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A606464D1D2262BF00EFA8E6 /* GBTabbarFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60646651D2262BF00EFA8E6 /* Build configuration list for PBXNativeTarget "GBTabbarFramework" */;
+			buildPhases = (
+				A606464A1D2262BF00EFA8E6 /* Sources */,
+				A606464B1D2262BF00EFA8E6 /* Frameworks */,
+				A606464C1D2262BF00EFA8E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBTabbarFramework;
+			productName = GBTabbarFramework;
+			productReference = A606464E1D2262BF00EFA8E6 /* GBTabbarFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60646461D2262BF00EFA8E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = walker;
+				TargetAttributes = {
+					A606464D1D2262BF00EFA8E6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A9DWS95K67;
+					};
+				};
+			};
+			buildConfigurationList = A60646491D2262BF00EFA8E6 /* Build configuration list for PBXProject "GBTabbarFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60646451D2262BF00EFA8E6;
+			productRefGroup = A606464F1D2262BF00EFA8E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A606464D1D2262BF00EFA8E6 /* GBTabbarFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A606464C1D2262BF00EFA8E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60646611D2262BF00EFA8E6 /* LaunchScreen.storyboard in Resources */,
+				A606465E1D2262BF00EFA8E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A606464A1D2262BF00EFA8E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A667AB851D2276B300B54786 /* GBWeiboTabBarViewController.m in Sources */,
+				A60646701D226CA600EFA8E6 /* GBTwoTableViewController.m in Sources */,
+				A60646761D226CC700EFA8E6 /* GBFourTableViewController.m in Sources */,
+				A606466A1D22634400EFA8E6 /* GBWeChatTabBarController.m in Sources */,
+				A667AB971D22B68700B54786 /* GBTabBar.m in Sources */,
+				A60646561D2262BF00EFA8E6 /* AppDelegate.m in Sources */,
+				A60646731D226CB500EFA8E6 /* GBThreeTableViewController.m in Sources */,
+				A606466D1D226C9300EFA8E6 /* GBOneTableViewController.m in Sources */,
+				A60646531D2262BF00EFA8E6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A606465F1D2262BF00EFA8E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60646601D2262BF00EFA8E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60646631D2262BF00EFA8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A60646641D2262BF00EFA8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A60646661D2262BF00EFA8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GBTabbarFramework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.sharma.www-bin.GBTabbarFramework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A60646671D2262BF00EFA8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GBTabbarFramework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.sharma.www-bin.GBTabbarFramework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60646491D2262BF00EFA8E6 /* Build configuration list for PBXProject "GBTabbarFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60646631D2262BF00EFA8E6 /* Debug */,
+				A60646641D2262BF00EFA8E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60646651D2262BF00EFA8E6 /* Build configuration list for PBXNativeTarget "GBTabbarFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60646661D2262BF00EFA8E6 /* Debug */,
+				A60646671D2262BF00EFA8E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60646461D2262BF00EFA8E6 /* Project object */;
+}
