@@ -80,10 +80,5 @@
 #pragma mark - implement delegate
 - (void)tabBarDidClickPlusButton:(GBTabBar *)tabBar {
     NSLog(@"点击，在这里实现代理操作，比如跳转一个控制器");
-    
-    //这里我随便添加了一个图片
-    UIView *customView = [[UIView alloc]initWithFrame:CGRectMake(0, 300,kSWidth, 250)];
-    customView.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:customView];
 }
 @end
