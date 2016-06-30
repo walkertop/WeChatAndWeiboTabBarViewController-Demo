@@ -13,6 +13,8 @@
 #import "GBFourTableViewController.h"
 #import "GBTabBar.h"    //自定义tabBar
 
+#define kSWidth [UIScreen mainScreen].bounds.size.width
+
 
 @interface GBWeiboTabBarViewController ()<GBTabBarDelegate,UITabBarControllerDelegate>
 
@@ -24,7 +26,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupAllChildViewControllers];
-    self.selectedIndex = 3;
     
     //把自定义的tabBar替换掉系统tabBar
     GBTabBar *customTabBar = [[GBTabBar alloc]init];
@@ -33,21 +34,8 @@
     self.delegate = self;
     //注意：因为是系统的tabBar是readonly的，所以用KVO方法替换
     [self setValue:customTabBar forKey:@"tabBar"];
-    NSLog(@"viewControllers === %@",self.viewControllers);
-    NSLog(@"childViewControllers===%@",self.childViewControllers);
 }
 
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    
-    NSLog(@"%ld",self.selectedIndex);
-    NSLog(@"%@",self.tabBarController);
-    NSLog(@"%@",self.selectedViewController);
-    UINavigationController *selectedNav =  (UINavigationController *)self.selectedViewController;
-    NSLog(@"%@",selectedNav.viewControllers);
-    if (self.selectedIndex == 2) {
-        self.selectedIndex = 0;
-    }
-}
 #pragma mark - custom method
 // 初始化所有的子控制器
 - (void)setupAllChildViewControllers {
@@ -91,33 +79,11 @@
 
 #pragma mark - implement delegate
 - (void)tabBarDidClickPlusButton:(GBTabBar *)tabBar {
-    NSLog(@"点击，在这里实现代理操作");
-   
-    UIViewController *vc = [[UIViewController alloc]init];
-    vc.view.backgroundColor = [UIColor greenColor];
+    NSLog(@"点击，在这里实现代理操作，比如跳转一个控制器");
     
-    UIViewController *oneVc = [[UIViewController alloc]init];
-    oneVc.view.frame = CGRectMake(10, 80, 100 , 200);
-    oneVc.view.backgroundColor = [UIColor whiteColor];
-    
-    UIViewController *twoVc = [[UIViewController alloc]init];
-    twoVc.view.frame = CGRectMake(150, 180, 70, 100);
-    twoVc.view.backgroundColor = [UIColor blackColor];
-    [vc.view addSubview:oneVc.view];
-    [vc.view addSubview:twoVc.view];
-    [vc addChildViewController:oneVc];
-    [vc addChildViewController:twoVc];
-
-    [self.navigationController pushViewController:vc animated:YES];
-    NSLog(@"普通控制器的子控制器包含%@,数量有%lu",vc.childViewControllers,(unsigned long)vc.childViewControllers.count);
-    
-    NSLog(@"导航控制器的的子控制器包含%@,数量有%lu",self.navigationController.viewControllers,(unsigned long)self.navigationController.viewControllers.count);
-    
-    NSLog(@"导航控制器的childViewControllers是%@",self.navigationController.childViewControllers);
-    NSLog(@"自己的是childViewControllers%@，自己的viewControllers是%@",self.childViewControllers,self.viewControllers
-);
-
-    NSLog(@"栈顶%@",self.navigationController.topViewController);
-    
+    //这里我随便添加了一个图片
+    UIView *customView = [[UIView alloc]initWithFrame:CGRectMake(0, 300,kSWidth, 250)];
+    customView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:customView];
 }
 @end
