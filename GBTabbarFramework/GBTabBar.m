@@ -41,7 +41,6 @@
     
     //先设置中间按钮的位置
     self.customButton.center = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
-    
     //计算每个按钮的宽度
     CGFloat tabBarButtonW = self.frame.size.width / 5;
     CGFloat tabBarButtonIndex = 0;
@@ -49,7 +48,6 @@
         Class class = NSClassFromString(@"UITabBarButton");
         if ([child isKindOfClass:class]) {
             child.frame = CGRectMake(tabBarButtonIndex * tabBarButtonW, 0, tabBarButtonW, self.frame.size.height);
-            
             tabBarButtonIndex++;
             if (tabBarButtonIndex == 2) {
                 tabBarButtonIndex++;
@@ -60,7 +58,6 @@
 
 #pragma mark - custom method
 - (void)customButtonClick {
-    NSLog(@"click");
     //遵守代理
     if ([self.myDelegate respondsToSelector:@selector(tabBarDidClickPlusButton:)]) {
         [self.myDelegate tabBarDidClickPlusButton:self];
