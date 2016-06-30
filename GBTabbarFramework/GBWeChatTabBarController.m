@@ -23,10 +23,7 @@
     [super viewDidLoad];
  
     //创建正常的四个控制器（类似微信）
-    [self setupAllChildViewControllers];
-
-    //创建四个控制器加中间自定义按钮的控制器（类似未必）
-    
+    [self setupAllChildViewControllers];    
 }
 
 #pragma mark - custom method
